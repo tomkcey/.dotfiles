@@ -1,0 +1,8 @@
+[Desktop Entry]
+Terminal=false
+Name=polybar
+Type=Application
+Exec=polybar
+Icon=taskbar
+NoDisplay=false
+StartupNotify=false
