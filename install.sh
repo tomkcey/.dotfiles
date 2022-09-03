@@ -9,7 +9,7 @@ sudo pacman -S --needed neofetch neovim polybar tmux starship
 cargo install alacritty
 pacman -S --needed cmake freetype2 fontconfig pkg-config make libxcb libxkbcommon python blueman bluez bluez-libs bluez-utils pamixer pavucontrol
 
-
+mv nordtheme.png ~/Pictures/
 
 ln -s fonts/* ~/.local/share/fonts/
 ln -s i3/* ~/.config/i3/
