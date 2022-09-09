@@ -27,5 +27,8 @@ case $1 in
         pamixer --toggle-mute
         ;;
     *)
-        echo " ${SOURCE} |  ${VOLUME} ${SINK}"
+        # echo " ${SOURCE} |  ${VOLUME} ${SINK}"
+
+        echo " |  ${VOLUME}"
+
 esac

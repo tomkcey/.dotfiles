@@ -1,7 +1,0 @@
-[Desktop Entry]
-Terminal=false
-Name=startup shell
-Type=Application
-Exec=alacritty
-Icon=shell
-StartupNotify=false
