@@ -18,10 +18,13 @@ mkdir $HOME/.local/share/fonts
 mkdir $CONFIG/alacritty
 mkdir $CONFIG/polybar
 mkdir $CONFIG/nvim
+mkdir $CONFIG/picom
+mkdir $CONFIG/dunst
 
 rm $CONFIG/i3/config
 rm $CONFIG/neofetch/config.conf
 rm $CONFIG/flameshot/flameshot.ini
+rm $CONFIG/dunst/dunstrc
 
 ln -s $SOURCE/fonts/* $HOME/.local/share/fonts/
 ln -s $SOURCE/i3/* $CONFIG/i3/
@@ -33,3 +36,5 @@ ln -s $SOURCE/polybar/* $CONFIG/polybar/
 ln -s $SOURCE/nvim/* $CONFIG/nvim/
 ln -s $SOURCE/autostart/* $CONFIG/autostart/
 ln -s $SOURCE/flameshot/flameshot.ini $CONFIG/flameshot/flameshot.ini
+ln -s $SOURCE/dunst/dunstrc $CONFIG/dunst/dunstrc
+ln -s $SOURCE/picom/picom.conf $CONFIG/picom/picom.conf
