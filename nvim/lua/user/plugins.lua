@@ -59,11 +59,8 @@ return packer.startup(function(use)
 
 	-- formatting
 	use("jose-elias-alvarez/null-ls.nvim")
-	-- use "MunifTanjim/prettier.nvim"
 
 	-- theme
-	-- use "arcticicestudio/nord-vim"
-	-- use("shaunsingh/nord.nvim")
 
 	if PACKER_BOOTSTRAP then
 		require("packer").sync()

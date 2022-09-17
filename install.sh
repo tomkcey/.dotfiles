@@ -7,11 +7,15 @@ source ~/.zshrc
 
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | sh
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
-sudo pacman -S --needed neofetch neovim polybar tmux starship cmake freetype2 fontconfig pkg-config make libxcb libxkbcommon python blueman bluez bluez-libs bluez-utils pamixer pavucontrol nitrogen feh gsettings pipewire pipewire-alsa pipewire-jack pipewire-pulse gst-plugin-pipewire wireplumber flameshot yarn discord
+sudo pacman -S --needed \
+  neofetch \
+  neovim \
+  polybar \
+  tmux \
+  starship cmake freetype2 fontconfig pkg-config make libxcb libxkbcommon python blueman bluez bluez-libs bluez-utils pamixer pavucontrol nitrogen feh gsettings pipewire pipewire-alsa pipewire-jack pipewire-pulse gst-plugin-pipewire wireplumber flameshot yarn discord
 
 cargo install alacritty
 
-ln -s $SOURCE/nordtheme.png $HOME/Pictures/nordtheme.png
 ln -s $SOURCE/monitor.sh $HOME/.screenlayout/monitor.sh
 
 mkdir $HOME/.local/share/fonts

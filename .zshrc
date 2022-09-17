@@ -1,8 +1,8 @@
-#export STARSHIP_CONFIG="~/.config/starship/starship.toml"
-#export STARSHIP_CACHE="~/.config/starship/cache"
-
 bindkey "^[[1;5C" forward-word
 bindkey "^[[1;5D" backward-word
+bindkey "^[[3~" delete-char
+bindkey "^[[1;2D" backward-char
+bindkey "^[[1;2C" forward-char
 
 eval "$(starship init zsh)"
 
