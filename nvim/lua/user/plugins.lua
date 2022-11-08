@@ -61,6 +61,18 @@ return packer.startup(function(use)
 	use("jose-elias-alvarez/null-ls.nvim")
 
 	-- theme
+	use("rmehri01/onenord.nvim")
+
+	-- misc
+	use({
+		"nvim-treesitter/nvim-treesitter",
+		run = function()
+			require("nvim-treesitter.install").update({ with_sync = true })
+		end,
+	})
+	use({ "kyazdani42/nvim-tree.lua", requires = { "kyazdani42/nvim-web-devicons" } })
+	use({ "nvim-lualine/lualine.nvim", requires = { "kyazdani42/nvim-web-devicons", opt = true } })
+	use({ "romgrk/barbar.nvim", requires = { "kyazdani42/nvim-web-devicons" } })
 
 	if PACKER_BOOTSTRAP then
 		require("packer").sync()
